@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>下载 Alice</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=Noto+Sans+SC:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans SC', system-ui, sans-serif; }
+    h1,h2,h3,h4 { font-family: 'Noto Serif SC', serif; }
+    .download-hero { background:var(--cream-dark); padding:3rem 0 2rem; border-bottom:1px solid var(--warm-border); text-align:center; }
+    .download-option { display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:start; padding:3rem 0; border-bottom:1px solid var(--warm-border); }
+    .download-option:last-child { border-bottom:none; }
+    .download-option--reverse { direction:rtl; }
+    .download-option--reverse > * { direction:ltr; }
+    .download-option__visual { background:var(--white); border:1px solid var(--warm-border); border-radius:var(--radius-lg); padding:2.5rem; text-align:center; box-shadow:var(--shadow-md); }
+    .download-option__visual .big-icon { font-size:5rem; margin-bottom:1rem; }
+    .steps-list { margin:1.5rem 0; display:flex; flex-direction:column; gap:0.75rem; }
+    .step { display:flex; gap:1rem; align-items:flex-start; }
+    .step__num { width:28px; height:28px; min-width:28px; border-radius:50%; background:var(--accent); color:var(--white); display:flex; align-items:center; justify-content:center; font-size:0.8rem; font-weight:600; margin-top:0.1rem; }
+    .step__text { font-size:0.95rem; line-height:1.6; }
+    .system-req { background:var(--cream-dark); border:1px solid var(--warm-border); border-radius:var(--radius-md); padding:1.25rem 1.5rem; margin-top:1.5rem; }
+    .system-req h4 { margin-bottom:0.5rem; font-size:0.8rem; }
+    .system-req ul { padding-left:1.2rem; list-style:disc; }
+    .system-req ul li { font-size:0.85rem; color:var(--text-muted); margin-bottom:0.2rem; }
+    @media (max-width:720px) { .download-option { grid-template-columns:1fr; } .download-option--reverse { direction:ltr; } }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="../assets/images/alice-logo.jpg" onerror="this.src='../assets/images/alice-logo.svg'" alt="Alice 标志">
+      <span class="nav__logo-text">Alice</span>
+    </a>
+    <button class="nav__hamburger" aria-label="打开菜单"><span></span><span></span><span></span></button>
+    <div class="nav__links">
+      <a href="index.html#features">功能介绍</a>
+      <a href="index.html#why">为何选择</a>
+      <a href="download.html" class="active">下载</a>
+      <a href="index.html#contact">联系我们</a>
+      <div class="lang-switcher">
+        <button class="lang-switcher__btn">🌐 中文 ▾</button>
+        <div class="lang-switcher__dropdown">
+          <a href="../en/download.html">English</a>
+          <a href="../zh/download.html" class="current">中文</a>
+          <a href="../ja/download.html">日本語</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="download-hero">
+  <div class="container">
+    <h1>下载 Alice</h1>
+    <p>选择适合您设备的版本，几分钟即可完成设置。</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="download-option" id="box">
+    <div class="download-option__content">
+      <span class="label">机顶盒</span>
+      <h2 style="margin-top:0.75rem;">Alice 机顶盒版</h2>
+      <p>通过标准 HDMI 线将 Alice 设备连接到任意电视。无需技术知识——插上电源，按照屏幕提示操作即可。</p>
+      <div class="steps-list">
+        <div class="step"><div class="step__num">1</div><div class="step__text">将软件下载到 U 盘，或按照设备屏幕上的提示进行操作。</div></div>
+        <div class="step"><div class="step__num">2</div><div class="step__text">通过 HDMI 将 Alice 机顶盒连接到电视，并接通电源。</div></div>
+        <div class="step"><div class="step__num">3</div><div class="step__text">按照屏幕设置向导操作，约需 5 分钟完成。</div></div>
+        <div class="step"><div class="step__num">4</div><div class="step__text">邀请家人通过手机端 Alice 应用进行连接。</div></div>
+      </div>
+      <a href="https://alicehometech.com/download-box.html?type=box" class="btn btn--primary">下载机顶盒版</a>
+      <div class="system-req">
+        <h4>系统要求</h4>
+        <ul>
+          <li>任意带 HDMI 接口的电视（2010 年及以后款式）</li>
+          <li>Wi-Fi 网络连接（建议 5 Mbps 或以上）</li>
+          <li>Alice 机顶盒硬件设备</li>
+        </ul>
+      </div>
+    </div>
+    <div class="download-option__visual">
+      <div class="big-icon">📦</div>
+      <h3>机顶盒</h3>
+      <p style="color:var(--text-muted); font-size:0.9rem; margin-top:0.5rem;">通过 HDMI 连接任意电视</p>
+    </div>
+  </div>
+
+  <div class="download-option download-option--reverse" id="mobile">
+    <div class="download-option__content">
+      <span class="label">手机版</span>
+      <h2 style="margin-top:0.75rem;">Alice 手机版</h2>
+      <p>Alice 手机应用支持 iOS（iPhone/iPad）和 Android 设备。家人也可以安装，随时与老人保持联系。</p>
+      <div class="steps-list">
+        <div class="step"><div class="step__num">1</div><div class="step__text">在 App Store（iOS）或 Google Play（Android）下载 Alice。</div></div>
+        <div class="step"><div class="step__num">2</div><div class="step__text">创建 Alice 账户，或使用已有账户登录。</div></div>
+        <div class="step"><div class="step__num">3</div><div class="step__text">设置个人档案和偏好——Alice 将根据您的需求个性化定制。</div></div>
+        <div class="step"><div class="step__num">4</div><div class="step__text">与家人及 Alice 机顶盒（如有）进行连接。</div></div>
+      </div>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="https://alicehometech.com/download-box.html?type=mobile" class="btn btn--primary">在 App Store 下载</a>
+        <a href="https://alicehometech.com/download-box.html?type=mobile" class="btn btn--outline">在 Google Play 下载</a>
+      </div>
+      <div class="system-req">
+        <h4>系统要求</h4>
+        <ul>
+          <li>iOS 14.0 或更高版本（iPhone、iPad）</li>
+          <li>Android 8.0 或更高版本</li>
+          <li>互联网连接（Wi-Fi 或移动数据）</li>
+        </ul>
+      </div>
+    </div>
+    <div class="download-option__visual">
+      <div class="big-icon">📱</div>
+      <h3>手机应用</h3>
+      <p style="color:var(--text-muted); font-size:0.9rem; margin-top:0.5rem;">iOS 与 Android</p>
+    </div>
+  </div>
+</div>
+
+<section class="section section--alt">
+  <div class="container text-center">
+    <h2>需要帮助进行设置？</h2>
+    <p style="color:var(--text-muted); margin:0.75rem auto 1.5rem; max-width:500px;">我们的团队很乐意一步步引导您完成设置。</p>
+    <a href="index.html#contact" class="btn btn--primary">联系我们</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__logo">
+      <img src="../assets/images/alice-logo.jpg" onerror="this.src='../assets/images/alice-logo.svg'" alt="Alice">
+      <span class="footer__logo-text">Alice</span>
+    </div>
+    <nav class="footer__nav">
+      <a href="index.html">首页</a>
+      <a href="index.html#features">功能介绍</a>
+      <a href="download.html">下载</a>
+      <a href="index.html#contact">联系我们</a>
+    </nav>
+    <p class="footer__copy">© 2026 Alice – 老年人个人数字助手。保留所有权利。</p>
+  </div>
+</footer>
+<script src="../js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alice 是专为老年人设计的个人AI助手——连接家人，守护健康，让爱常伴左右。">
+  <title>Alice – 以关爱为核心，一切由此而来</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=Noto+Sans+SC:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans SC', 'Source Sans 3', system-ui, sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Noto Serif SC', 'Lora', serif; }
+  </style>
+</head>
+<body>
+
+<!-- ===== 导航 ===== -->
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="../assets/images/alice-logo.jpg" onerror="this.src='../assets/images/alice-logo.svg'" alt="Alice 标志">
+      <span class="nav__logo-text">Alice</span>
+    </a>
+    <button class="nav__hamburger" aria-label="打开菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__links">
+      <a href="#features">功能介绍</a>
+      <a href="#why">为何选择</a>
+      <a href="download.html">下载</a>
+      <a href="#contact">联系我们</a>
+      <div class="lang-switcher">
+        <button class="lang-switcher__btn">🌐 中文 ▾</button>
+        <div class="lang-switcher__dropdown">
+          <a href="../en/index.html">English</a>
+          <a href="../zh/index.html" class="current">中文</a>
+          <a href="../ja/index.html">日本語</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== 主页横幅 ===== -->
+<section class="hero" id="home">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <p class="hero__tagline">专为老年人设计的个人AI助手</p>
+      <h1 class="hero__title">以关爱为核心，<br>一切由此而来。</h1>
+      <p class="hero__subtitle">
+        Alice 拉近您与家人的距离，守护您的健康，让您在家中就能享受安心与陪伴。
+      </p>
+      <div class="hero__ctas">
+        <a href="download.html" class="btn btn--primary">下载 Alice</a>
+        <a href="#features" class="btn btn--outline">了解功能</a>
+      </div>
+    </div>
+    <div class="hero__image">
+      <img src="https://img1.wsimg.com/isteam/ip/b79b17a9-c63e-4661-b57b-d2bf6fcf4516/seniorTV1.jpeg"
+           alt="家人一起看电视，使用 Alice">
+    </div>
+  </div>
+</section>
+
+<!-- ===== 功能介绍 ===== -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-header">
+      <h4>Alice 能做什么</h4>
+      <h2>随时随地的个人AI助手</h2>
+      <p>六大功能，帮助老年人更好地生活、更紧密地与家人相连。</p>
+    </div>
+    <div class="features-list">
+      <div class="feature-card">
+        <div class="feature-card__icon">📺</div>
+        <h3>客厅电视视频通话</h3>
+        <p>无需手机或电脑，直接在电视上与家人视频通话，看到他们的笑脸。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🧠</div>
+        <h3>每日脑力与体力锻炼</h3>
+        <p>根据您的节奏和能力，提供个性化的运动和益智活动指导。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🏥</div>
+        <h3>远程医疗与健康档案</h3>
+        <p>在家中即可进行远程就诊，并随时查阅个人健康档案记录。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">⏰</div>
+        <h3>日常事务与用药提醒</h3>
+        <p>贴心的个性化提醒，让您不再遗漏任何药物或重要事项。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">📰</div>
+        <h3>家庭动态与消息推送</h3>
+        <p>随时了解家人的最新动态——照片、消息和新闻，直接送达您身边。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🚨</div>
+        <h3>紧急警报与健康状态</h3>
+        <p>危急时刻，家人即刻收到警报，实时了解您的健康状态。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 问题所在 ===== -->
+<section class="section section--alt" id="why">
+  <div class="container">
+    <div class="section-header">
+      <h4>现实处境</h4>
+      <h2>数百万老年人正面临的困境</h2>
+    </div>
+    <div class="callout">
+      <p>"孤独与隔离流行病的严重影响，需要我们给予紧迫关注。"</p>
+      <cite>— 美国卫生总监 Vivek Murthy 博士</cite>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <img src="https://img1.wsimg.com/isteam/ip/b79b17a9-c63e-4661-b57b-d2bf6fcf4516/lonely1.jpg"
+             alt="孤独的老人">
+        <div class="problem-card__body">
+          <h3>孤独与隔离</h3>
+          <p>日复一日思念家人，却找不到便捷的方式联系。</p>
+        </div>
+      </div>
+      <div class="problem-card">
+        <img src="https://img1.wsimg.com/isteam/ip/b79b17a9-c63e-4661-b57b-d2bf6fcf4516/pandemic1.jpg"
+             alt="疫情中的分离">
+        <div class="problem-card__body">
+          <h3>距离与分隔</h3>
+          <p>即使家人近在咫尺，障碍也可能让他们感觉遥不可及。</p>
+        </div>
+      </div>
+      <div class="problem-card">
+        <img src="https://img1.wsimg.com/isteam/ip/b79b17a9-c63e-4661-b57b-d2bf6fcf4516/lonely9.jpg"
+             alt="行动不便的老人">
+        <div class="problem-card__body">
+          <h3>行动不便</h3>
+          <p>足不出户意味着缺乏运动和精神刺激，健康每况愈下。</p>
+        </div>
+      </div>
+      <div class="problem-card">
+        <img src="https://img1.wsimg.com/isteam/ip/b79b17a9-c63e-4661-b57b-d2bf6fcf4516/lonely2.jpg"
+             alt="跌倒风险">
+        <div class="problem-card__body">
+          <h3>跌倒与意外</h3>
+          <p>独居时发生意外，无人及时施以援手。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 老龄化世界 ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h4>宏观视野</h4>
+      <h2>老龄化社会带来的新挑战</h2>
+      <p>老年人口增长速度正在超越社会的支持能力。</p>
+    </div>
+    <div class="stat-strip">
+      <div class="stat-item">
+        <div class="stat-item__number">每4人中1人</div>
+        <div class="stat-item__label">65岁以上成年人存在社会隔离</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-item__number">36%</div>
+        <div class="stat-item__label">美国老年人独居</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-item__number">73亿</div>
+        <div class="stat-item__label">2030年前全球老年人口将超过儿童</div>
+      </div>
+    </div>
+    <div style="margin-top: 2.5rem;">
+      <h3 style="margin-bottom: 1rem;">老年人当前面临的常见挑战：</h3>
+      <ul class="challenges-list">
+        <li>慢性病及阿尔茨海默症等神经退行性疾病</li>
+        <li>行动障碍与跌倒风险</li>
+        <li>心理健康——孤独、抑郁与焦虑</li>
+        <li>认知衰退，包括痴呆症</li>
+        <li>复杂的用药管理</li>
+        <li>营养与体重管理</li>
+        <li>获取医疗资源与远程医疗的困难</li>
+        <li>遭受虐待老人及金融诈骗的风险</li>
+        <li>难以跟上快速变化的科技发展</li>
+        <li>经济困难与有限的金融服务获取渠道</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 解决方案 ===== -->
+<section class="section section--accent" id="solutions">
+  <div class="container">
+    <div class="section-header">
+      <h4>Alice 的答案</h4>
+      <h2>简单、实惠、个性化的关爱</h2>
+      <p>Alice 用专为老年人设计的贴心技术，逐一回应上述挑战。</p>
+    </div>
+    <div class="solution-grid">
+      <div class="solution-item">
+        <img src="https://alicehometech.com/image/larryPicture/caregiver-assisting-with-seniors-daily-routine.webp" alt="日常日程">
+        <div class="solution-item__text">
+          <h3>日常日程与提醒</h3>
+          <p>您的个性化日常助手，管理作息、用药与预约事项。</p>
+        </div>
+      </div>
+      <div class="solution-item">
+        <img src="https://alicehometech.com/image/larryPicture/fall helper.webp" alt="紧急响应">
+        <div class="solution-item__text">
+          <h3>紧急响应</h3>
+          <p>您的守护天使——随时准备在需要时向家人发出警报。</p>
+        </div>
+      </div>
+      <div class="solution-item">
+        <img src="https://alicehometech.com/image/larryPicture/personal trainer.webp" alt="健身教练">
+        <div class="solution-item__text">
+          <h3>个人健身教练</h3>
+          <p>根据您的能力定制运动计划，保持身心活跃。</p>
+        </div>
+      </div>
+      <div class="solution-item">
+        <img src="https://alicehometech.com/image/larryPicture/family story time on tv.webp" alt="家庭记忆">
+        <div class="solution-item__text">
+          <h3>家庭记忆与故事</h3>
+          <p>Alice 帮您珍藏家族历史——记录故事与美好时刻，传承给后代。</p>
+        </div>
+      </div>
+      <div class="solution-item">
+        <img src="https://alicehometech.com/image/larryPicture/doctor visit in your TV.webp" alt="远程就诊">
+        <div class="solution-item__text">
+          <h3>在家看诊</h3>
+          <p>直接在客厅电视上与医生视频通话——无需出行，轻松便捷。</p>
+        </div>
+      </div>
+      <div class="solution-item">
+        <img src="https://alicehometech.com/image/larryPicture/Alice box.webp" alt="Alice 设备">
+        <div class="solution-item__text">
+          <h3>简单实惠的设备</h3>
+          <p>Alice 机顶盒可连接任何电视——无需任何技术知识。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 下载 ===== -->
+<section class="section section--alt" id="download">
+  <div class="container">
+    <div class="section-header text-center" style="max-width:100%; margin-bottom:2rem;">
+      <h4>立即开始</h4>
+      <h2>下载 Alice</h2>
+      <p>支持 Alice 机顶盒及 iOS、Android 移动设备。</p>
+    </div>
+    <div class="download-cards">
+      <div class="download-card">
+        <div class="download-card__icon">📦</div>
+        <h3>机顶盒版</h3>
+        <p>适用于 Alice 机顶盒设备，可连接任意电视。</p>
+        <a href="download.html#box" class="btn btn--primary">下载机顶盒版</a>
+      </div>
+      <div class="download-card">
+        <div class="download-card__icon">📱</div>
+        <h3>手机版</h3>
+        <p>适用于 iOS 和 Android 智能手机及平板电脑。</p>
+        <a href="download.html#mobile" class="btn btn--outline">下载手机版</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 联系我们 ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <h4>联系方式</h4>
+      <h2>给我们留言</h2>
+      <p>无论您有疑问、需要帮助，还是只想打个招呼，我们都很乐意听到您的声音。</p>
+    </div>
+    <div class="contact-inner">
+      <form class="contact-form" onsubmit="handleContact(event)">
+        <div class="form-group">
+          <label for="name">姓名 <span style="color:var(--alert)">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="您的姓名">
+        </div>
+        <div class="form-group">
+          <label for="email">邮箱 <span style="color:var(--alert)">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="phone">电话</label>
+          <input type="tel" id="phone" name="phone" placeholder="选填">
+        </div>
+        <div class="form-group">
+          <label for="message">留言 <span style="color:var(--alert)">*</span></label>
+          <textarea id="message" name="message" required placeholder="有什么我们可以帮您的吗？"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">发送留言</button>
+        <p id="contact-success" style="display:none; color:var(--accent); font-weight:600;">
+          ✓ 谢谢您！我们会尽快与您联系。
+        </p>
+      </form>
+      <div class="contact-image">
+        <img src="https://img1.wsimg.com/isteam/ip/b79b17a9-c63e-4661-b57b-d2bf6fcf4516/senior%20love1.jpg"
+             alt="祖母与孙子孙女">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__logo">
+      <img src="../assets/images/alice-logo.jpg" onerror="this.src='../assets/images/alice-logo.svg'" alt="Alice">
+      <span class="footer__logo-text">Alice</span>
+    </div>
+    <nav class="footer__nav">
+      <a href="index.html">首页</a>
+      <a href="#features">功能介绍</a>
+      <a href="download.html">下载</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+    <p class="footer__copy">© 2026 Alice – 老年人个人数字助手。保留所有权利。</p>
+  </div>
+</footer>
+
+<script src="../js/nav.js"></script>
+<script>
+function handleContact(e) {
+  e.preventDefault();
+  document.getElementById('contact-success').style.display = 'block';
+  e.target.reset();
+}
+</script>
+</body>
+</html>
