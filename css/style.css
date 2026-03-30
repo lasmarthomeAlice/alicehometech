@@ -438,6 +438,7 @@ p:last-child { margin-bottom: 0; }
 }
 @media (max-width: 480px) {
   .solution-grid { grid-template-columns: 1fr; }
+}
 
 /* =============================================
    DOWNLOAD SECTION
